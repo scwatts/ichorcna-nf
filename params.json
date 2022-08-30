@@ -1,0 +1,6 @@
+{
+  "subject_name": "subject_name_PLACEHOLDER",
+  "bam": "data/placeholder/sample.bam",
+  "bai": "data/placeholder/sample.bai",
+  "ref_fasta": "data/placeholder/ref_fasta.fa"
+}
