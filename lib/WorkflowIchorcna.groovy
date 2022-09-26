@@ -15,7 +15,7 @@ class WorkflowIchorcna {
 
   private static get_readcount_wig_data(d, phenotype) {
     def index = d.findIndexOf { meta, wig -> meta.phenotype == phenotype }
-    def ret = ['id': null, 'wig': null]
+    def ret = [:]
     if (index != -1) {
       def (meta, wig) = d[index]
       ret['id'] = meta.subject_id
