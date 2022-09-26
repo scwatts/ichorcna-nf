@@ -16,9 +16,10 @@ process ICHORCNA_RUN {
     path centromere
 
     output:
-    tuple val(meta), path("*.cna.seg")    , emit: cna_seg
-    tuple val(meta), path("*.params.txt") , emit: ichorcna_params
-    path "**/*genomeWide.pdf"             , emit: genome_plot
+    tuple val(meta), path("*.cna.seg")    , emit: optimal_cna_seg
+    tuple val(meta), path("*.params.txt") , emit: optimal_params
+    path "${meta.id}/*_genomeWide.pdf"    , emit: optimal_genome_plot
+    path "${meta.id}/*_genomeWide_n*pdf"  , emit: all_genome_plots
     path "versions.yml"                   , emit: versions
 
     when:
