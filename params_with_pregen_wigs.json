@@ -1,8 +1,0 @@
-{
-  "subject_name": "subject_name_PLACEHOLDER",
-  "bam": "data/placeholder/sample.bam",
-  "bai": "data/placeholder/sample.bai",
-  "ref_fasta": "data/placeholder/ref_fasta.fa",
-  "wig_map": "data/placeholder/map.wig",
-  "wig_gc": "data/placeholder/gc.wig"
-}

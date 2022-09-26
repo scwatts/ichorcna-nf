@@ -1,6 +1,14 @@
 {
-  "subject_name": "subject_name_PLACEHOLDER",
-  "bam": "data/placeholder/sample.bam",
-  "bai": "data/placeholder/sample.bai",
-  "ref_fasta": "data/placeholder/ref_fasta.fa"
+  "subject_id": "subject_id_PLACEHOLDER",
+  "tumor_id": "tumor_id_PLACEHOLDER",
+  "normal_id": "normal_id_PLACEHOLDER",
+
+  "tumor_bam": "data/placeholder/sample_tumor.bam",
+  "tumor_bai": "data/placeholder/sample_tumor.bai",
+  "normal_bam": "data/placeholder/sample_normal.bam",
+  "normal_bai": "data/placeholder/sample_normal.bai",
+
+  "centromeres": "data/placeholder/centromeres.txt",
+  "wig_gc": "data/placeholder/gc.wig",
+  "wig_map": "data/placeholder/map.wig"
 }
