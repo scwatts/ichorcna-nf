@@ -52,8 +52,9 @@ process ICHORCNA_RUN {
 
     stub:
     """
-    mkdir subdir/
-    touch subdir/stub.genomeWide.pdf
+    mkdir ${meta.id}/
+    touch ${meta.id}/stub_genomeWide.pdf
+    touch ${meta.id}/stub_genomeWide_nXXX-pXXX.pdf
 
     touch stub.cna.seg stub.params.txt versions.yml
     """
