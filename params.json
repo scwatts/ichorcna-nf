@@ -8,7 +8,9 @@
   "normal_bam": "data/placeholder/sample_normal.bam",
   "normal_bai": "data/placeholder/sample_normal.bai",
 
+  "hmmcopy_bin_size": 1000000,
   "centromeres": "data/placeholder/centromeres.txt",
   "wig_gc": "data/placeholder/gc.wig",
-  "wig_map": "data/placeholder/map.wig"
+  "wig_map": "data/placeholder/map.wig",
+  "panel_of_normals": "data/placeholder/pon.rds"
 }
