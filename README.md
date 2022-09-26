@@ -12,7 +12,9 @@ added to each module.
 nextflow run main.nf -params-file params.json -stub
 ```
 
-## Misc
+## Reference files
 
-The centromere file downloaded from:
-<https://raw.githubusercontent.com/broadinstitute/ichorCNA/master/inst/extdata/GRCh38.GCA_000001405.2_centromere_acen.txt>
+HMMcopy resource files are reference and libray format dependent. I have generated resource files for our hg38 assembly
+version and 151 bp library format. These are located in `./data/resource_files/`.
+
+See [RESOURCE_FILES.md](RESOURCE_FILES.md) for further details.
