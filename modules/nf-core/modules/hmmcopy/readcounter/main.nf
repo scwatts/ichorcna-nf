@@ -35,6 +35,6 @@ process HMMCOPY_READCOUNTER {
 
     stub:
     """
-    touch stub.wig versions.yml
+    touch ${meta.id}.wig versions.yml
     """
 }
