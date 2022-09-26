@@ -24,6 +24,7 @@ if (params.normal_bam) {
 }
 
 
+ch_centromeres = file(params.centromeres, checkIfExists: true)
 ch_wig_gc = file(params.wig_gc, checkIfExists: true)
 ch_wig_map = file(params.wig_map, checkIfExists: true)
 
@@ -40,7 +41,7 @@ workflow ICHORCNA {
     ch_wig_gc,
     ch_wig_map,
     [], // panel_of_normals (optional)
-    [], // centromere (optional)
+    ch_centromeres,
   )
 
 }
