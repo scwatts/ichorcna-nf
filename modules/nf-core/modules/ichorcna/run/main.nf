@@ -9,7 +9,7 @@ process ICHORCNA_RUN {
         'quay.io/biocontainers/r-ichorcna:0.3.2--r41hdfd78af_0' }"
 
     input:
-    tuple val(meta), path(wig)
+    tuple val(meta), path(tumor_wig), path(normal_wig)
     path gc_wig
     path map_wig
     path panel_of_normals
@@ -29,11 +29,13 @@ process ICHORCNA_RUN {
     def prefix = task.ext.prefix ?: "${meta.id}"
     def pon = panel_of_normals ? "--normalPanel ${panel_of_normals}" : ''
     def centro = centromere ? "--centromere ${centromere}" : ''
+    def normal_wig_arg = normal_wig ? "--NORMWIG ${normal_wig}" : ''
     def VERSION = '0.3.2' // WARN: Version information not provided by tool on CLI. Please update this string when bumping container versions.
     """
     runIchorCNA.R --id ${prefix} \\
         $args \\
-        --WIG ${wig} \\
+        --WIG ${tumor_wig} \\
+        ${normal_wig_arg} \\
         --id ${meta.id} \\
         --gcWig ${gc_wig} \\
         --mapWig ${map_wig} \\
